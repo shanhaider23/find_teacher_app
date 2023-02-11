@@ -1,4 +1,5 @@
 <template>
-    <section>Filter</section>
-    <section>List</section>
+    <section>Details</section>
+    
+    <router-link to="/coaches/c1/contact"></router-link>
 </template>
