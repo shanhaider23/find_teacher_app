@@ -1,4 +1,3 @@
 <template>
-    <section>register</section>
-   
+  <section>register</section>
 </template>

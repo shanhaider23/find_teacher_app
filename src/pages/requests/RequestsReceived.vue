@@ -1,4 +1,4 @@
 <template>
-    <section>Filter</section>
-    <section>List</section>
+  <section>Filter</section>
+  <section>List</section>
 </template>
