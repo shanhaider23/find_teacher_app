@@ -31,5 +31,32 @@
 <script>
 export default {
   props: ['id'],
+  data() {
+    return {
+      selectedCoach: null,
+    };
+  },
+  computed: {
+    fullName() {
+      return this.selectedCoach.fullName + ' ' + this.selectedCoach.lasrName;
+    },
+    area() {
+      return this.selectedCoach.areas;
+    },
+    rate() {
+      return this.selectedCoach.hourlyRate;
+    },
+    contactLink() {
+      return this.$route.path + '/' + this.id + '/contact';
+    },
+    description() {
+      return this.selectedCoach.description;
+    },
+  },
+  created() {
+    this.selectedCoach = this.$store.gatters['coaches/coaches'].find(
+      (coach) => coach.id === this.id
+    );
+  },
 };
 </script>
